@@ -28,20 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.getJokeBtn = new System.Windows.Forms.Button();
+            this.categoriesDdl = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
+            // 
+            // getJokeBtn
+            // 
+            this.getJokeBtn.Location = new System.Drawing.Point(63, 181);
+            this.getJokeBtn.Name = "getJokeBtn";
+            this.getJokeBtn.Size = new System.Drawing.Size(144, 88);
+            this.getJokeBtn.TabIndex = 0;
+            this.getJokeBtn.Text = "Get Joke";
+            this.getJokeBtn.UseVisualStyleBackColor = true;
+            // 
+            // categoriesDdl
+            // 
+            this.categoriesDdl.FormattingEnabled = true;
+            this.categoriesDdl.Location = new System.Drawing.Point(256, 112);
+            this.categoriesDdl.Name = "categoriesDdl";
+            this.categoriesDdl.Size = new System.Drawing.Size(124, 24);
+            this.categoriesDdl.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(437, 372);
+            this.Controls.Add(this.categoriesDdl);
+            this.Controls.Add(this.getJokeBtn);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Chuck Norris Joke App";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button getJokeBtn;
+        private System.Windows.Forms.ComboBox categoriesDdl;
     }
 }
 
