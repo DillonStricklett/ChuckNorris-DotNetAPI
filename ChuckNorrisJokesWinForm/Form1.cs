@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ChuckNorrisAPI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,15 @@ namespace ChuckNorrisJokesWinForm
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private async void Form1_Load(object sender, EventArgs e)
+        {
+            IEnumerable<string> categories = await ChuckNorrisClient.GetCategories();
+            foreach (var cat in categories)
+            {
+                categoriesDdl.Items.Add(cat);
+            }
         }
     }
 }
