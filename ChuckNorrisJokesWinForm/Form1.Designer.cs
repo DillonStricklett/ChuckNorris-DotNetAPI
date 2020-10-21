@@ -40,6 +40,7 @@
             this.getJokeBtn.TabIndex = 0;
             this.getJokeBtn.Text = "Get Joke";
             this.getJokeBtn.UseVisualStyleBackColor = true;
+            this.getJokeBtn.Click += new System.EventHandler(this.getJokeBtn_Click);
             // 
             // categoriesDdl
             // 

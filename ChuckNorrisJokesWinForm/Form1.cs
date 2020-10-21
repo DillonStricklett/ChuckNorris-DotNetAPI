@@ -26,5 +26,11 @@ namespace ChuckNorrisJokesWinForm
                 categoriesDdl.Items.Add(cat);
             }
         }
+
+        private async void getJokeBtn_Click(object sender, EventArgs e)
+        {
+            Joke jokeData = await ChuckNorrisClient.GetRandomJoke();
+            MessageBox.Show(jokeData.JokeText);
+        }
     }
 }
