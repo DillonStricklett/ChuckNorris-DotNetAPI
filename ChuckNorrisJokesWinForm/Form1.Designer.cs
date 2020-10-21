@@ -58,6 +58,7 @@
             this.Controls.Add(this.getJokeBtn);
             this.Name = "Form1";
             this.Text = "Chuck Norris Joke App";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
